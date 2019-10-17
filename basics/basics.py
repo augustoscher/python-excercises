@@ -1,4 +1,4 @@
-print("-- Types -- ")
+print("-- Strings -- ")
 print()
 
 mystring = "hello"
@@ -13,5 +13,6 @@ if isinstance(myint, int) and myint == 20:
     print("Integer: %d" % myint)
 
 print()
-print("-- Lists -- ")
-print()
+nome = 'Teste'
+idade = 18
+print('Nome: {a}, Idade: {b}'.format(a=nome, b=idade))

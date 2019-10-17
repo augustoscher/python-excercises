@@ -3,6 +3,9 @@ l1 = ['h', 'e', 'l', 'l', 'o']
 l2 = [1, 2, 3, 'a', 1.0, l1]
 print(l2)
 print(type(l2))
+print('x' in l2)
+print('a' in l2)
+print(3 in l2)
 print()
 
 #retornando um único valor

@@ -11,6 +11,10 @@ print(m)
 print()
 
 # Matriz de 10 cincos:
+m = (np.ones(10) * 5).reshape(1, 10)
+# ou
+m = (np.zeros(10) + 5).reshape(1, 10)
+# ou 
 m = np.linspace(5, 5, 10).reshape(1, 10)
 print(m)
 print()
@@ -24,6 +28,8 @@ print()
 booleanValues = a % 2 == 0
 a2 = a[booleanValues]
 print(a2)
+# ou 
+a2 = np.arange(10, 51, 2)
 print()
 
 # Matriz de 3x3 com valores de 0 a 8
@@ -36,22 +42,23 @@ m = np.eye(3)
 print(m)
 print()
 
-# Gerar números aleatorios entre 0 e 1 ?
-n = np.random.rand(1, 1)
+# Gerar números aleatorios entre 0 e 1
+n = np.random.rand(1)
 print(n)
 print()
 
-# Gerar array de 25 números aleatorios de uma distribuição normal ?
-n = np.random.rand(5, 5)
+# Gerar array de 25 números aleatorios de uma distribuição normal
+n = np.random.randn(25)
 print(n)
 print()
 
 # Matriz 10x10 ?
-m = np.linspace(0, 1, 100).reshape(10, 10)
+m = (np.arange(0, 100) / 100).reshape(10, 10)
 print(m)
 print()
 
 # Array igualmente espaçado com tamanho 20 de 0 e 1 ?
+print(np.linspace(0, 1, 20))
 
 print()
 print(' ----------------------- ')
@@ -61,26 +68,41 @@ print(m)
 print()
 
 print(m[2:5, 1:5])
+# ou
+# print(m[2:, 1:])
 print()
 
 # Acessar o elemento de valor 20
 print(m[3][4])
+# ou
+print(m[3, 4])
+# ou
+print(m[3, -1])
 print()
 
 # Retornar [2, 7, 12]
-print(m[0:3, 1])
+print(m[:3, 1:2])
+# ou
+# print(m[0:3, 1])
+# ou
+# print(m[:3, 1])
 print()
 
 # Retornar [21, 22, 23, 24, 24]
-print(m[4])
+print(m[4, :])
+# ou
+# print(m[-1, :])
+# ou
+# print(m[4])
 print()
 
-print(m[3:5, 0:5])
+print(m[3:, :5])
 
 print()
 print(' ----------------------- ')
 # Obter a soma dos valores 
 print(m.sum())
+print(np.sum(m))
 print()
 
 # Obter o desvio padrão
@@ -89,3 +111,5 @@ print()
 
 # Soma de todas as colunas
 print(np.sum(m, axis=0))
+# ou
+# m.sum(axis=0)

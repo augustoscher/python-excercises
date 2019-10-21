@@ -28,3 +28,7 @@ MANIFEST
 
 # .vim files
 *.swp
+*.swo
+
+# vscode
+*.vscode

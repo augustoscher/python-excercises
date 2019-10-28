@@ -32,5 +32,6 @@ print(df)
 print()
 
 print('5. Selecionando valores conforme level')
+# Faz o filtro com base nos itens internos
 print(df.xs(1, level='Item'))
 print()

@@ -25,7 +25,7 @@ print('3. Condicional em séries específicas com slice')
 print(df[df['W'] > 0]['Y'])
 print()
 
-print('4. Condicional com multiplas condições')
+print('4. Condicional com multiplas condições AND')
 # Precisa usar o operador & em vez de and
 # and não esta preparado para comparar series
 ret = df[(df['W'] > 0) & (df['Y'] > 1)]
@@ -33,5 +33,28 @@ print(ret)
 print()
 
 
-print('5. ')
+print('5. Condicional com multiplas condições OR')
+# Precisa usar o operador | em vez de or
+# or não esta preparado para comparar series
+ret = df[(df['W'] > 0) | (df['Y'] > 1)]
+print(ret)
+print()
+
+print('6. Reset index')
+# Remove o indice definido na construção do dataframe
+# Adiciona uma coluna chamada 'index' que vira o indice padrão
+df.reset_index(inplace=True)
+print(df)
+# ou
+# df = df.reset_index()
+print()
+
+print('7. Reset index passing index')
+col = 'RS SC PR SP RJ'.split()
+df['STATE'] = col
+print(df)
+print()
+
+df.set_index('STATE', inplace=True)
+print(df)
 print()

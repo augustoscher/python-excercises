@@ -33,3 +33,31 @@ df.drop('NEW', axis=1, inplace=True)
 # df = fd.drop('NEW', axis=1, inplace=True)
 print(df)
 print()
+
+# Buscar valores do dataframe
+# 1- Linha/Coluna
+print(df.loc['A', 'W'])
+print()
+
+# 2- Somente uma linha. Retorna uma serie
+print(df.loc['A'])
+print()
+
+# 3- Passando listas de linhas e colunas
+r = df.loc[['A','C'], ['X', 'Z']]
+print(type(r))
+print(r)
+print()
+
+# Seleciona dados usando notação de indices de numpy
+# Linha/Coluna
+r = df.iloc[1:4, 2:]
+print(type(r))
+print(r)
+print()
+
+
+
+
+
+

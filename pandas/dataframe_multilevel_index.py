@@ -30,3 +30,7 @@ print('4. Definindo nomes para os indices')
 df.index.names = ['Grupo', 'Item']
 print(df)
 print()
+
+print('5. Selecionando valores conforme level')
+print(df.xs(1, level='Item'))
+print()

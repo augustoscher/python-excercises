@@ -31,6 +31,11 @@ print(df['A'].fillna(value=df['A'].mean(), inplace=True))
 print(df)
 print()
 
+print('6. Preenche valores nan com os próximos valores')
+df = pd.DataFrame(d)
+df.fillna(method='ffill', inplace=True)
+print(df)
+print()
 
 
 

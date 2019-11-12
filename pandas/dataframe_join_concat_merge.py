@@ -32,3 +32,13 @@ print()
 
 print(df3)
 print()
+
+# Concatenando por colunas
+print('1. Concatenando dataframes axis=2')
+print(pd.concat([df1, df2, df3], axis=0))
+print()
+
+# Concatenando nas linhas
+print('2. Concatenando dataframes axis=1')
+print(pd.concat([df1, df2, df3], axis=1))
+print()

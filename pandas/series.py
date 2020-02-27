@@ -33,4 +33,3 @@ print(ser2)
 print()
 ser3 = ser1 + ser2
 print(ser3)
-

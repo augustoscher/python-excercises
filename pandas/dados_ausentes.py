@@ -37,6 +37,4 @@ df.fillna(method='ffill', inplace=True)
 print(df)
 print()
 
-
-
 print()

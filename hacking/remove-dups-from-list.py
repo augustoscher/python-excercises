@@ -24,3 +24,5 @@ for item in scores:
     i += 1
 
 print(indexes)
+for idx in indexes:
+  name[idx]

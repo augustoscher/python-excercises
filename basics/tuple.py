@@ -20,6 +20,12 @@ tuples2 = (2, 4, 6, 8, 12)
 tuples2 = (0, *tuples2)
 print(tuples2)
 
+# add tuple using list
+tup = (2, 4, 6, 8)
+l = list(tup)
+l.append(12)
+result = tuple(l)
+
 #returns error if we try to modify some value
 #the code below throws error
-#t[1] = 'asdj';
+#t[1] = 'asdj'

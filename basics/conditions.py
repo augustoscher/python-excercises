@@ -11,3 +11,6 @@ else:
   resultado = 'Reprovado'
 
 print('Resultado: {}'.format(resultado))
+
+sales = 1000
+bonus = 50 if sales > 500 else 0

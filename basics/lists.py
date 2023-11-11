@@ -15,3 +15,8 @@ print(l2[5][0])
 #retornando vários valores
 print(l2[1:4])
 print(l2[1:])
+
+# filtrando valores
+scores = [70, 60, 80, 90, 50]
+filtered = filter(lambda score: score >= 70, scores)
+print(list(filtered))

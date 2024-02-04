@@ -23,3 +23,9 @@ print(l2[1:])
 scores = [70, 60, 80, 90, 50]
 filtered = filter(lambda score: score >= 70, scores)
 print(list(filtered))
+
+
+# average 
+student_grades = [55, 70, 90]
+average = sum(student_grades) / len(student_grades)
+print('{0:.2f}'.format(average))

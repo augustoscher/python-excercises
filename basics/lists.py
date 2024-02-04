@@ -8,6 +8,9 @@ print('a' in l2)
 print(3 in l2)
 print()
 
+# add value
+l2.append('oi')
+
 #retornando um único valor
 print(l2[2])
 print(l2[5][0])
